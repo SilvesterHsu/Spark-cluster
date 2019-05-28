@@ -16,7 +16,6 @@ MAINTAINER Seel 459745355@qq.com
 COPY --from=build /usr/local/ /usr/local/
 
 ENV SPARK_HOME /usr/local/spark-2.4.3-bin-hadoop2.7
-# ENV SPARK_HOME /usr/local/spark-2.2.0-bin-hadoop2.7
 ENV PATH $PATH:$SPARK_HOME/bin
 
 WORKDIR "/usr/local/spark-2.4.3-bin-hadoop2.7"
